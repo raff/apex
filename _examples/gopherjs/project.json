@@ -1,0 +1,10 @@
+{
+  "name": "gopherjs",
+  "description": "An example that uses gopherjs to convert go code to javascript",
+  "role": "arn:aws:iam::293503197324:role/lambda_function",
+  "runtime": "nodejs",
+  "hooks": {
+      "build": "gopherjs build -m --output index.js index.go",
+      "clean": "rm -f index.js index.js.map"
+  }
+}
